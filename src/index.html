@@ -5,10 +5,17 @@
   <title>Chatdialog</title>
   <base href="/">
 
-  <link rel="manifest" href="manifest.json">
+  <!-- <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#fa5454" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="theme-color" content="#f48c5b">
+
+  <link rel="manifest" href="/manifest.json">
 
   <!-- CSS Reset -->
 <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
@@ -19,7 +26,7 @@
 <body>
   <app-root></app-root>
 
-  <script>
+  <!-- <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
         // Registration was successful
@@ -27,6 +34,18 @@
       }).catch(function (err) {
         // registration failed :(
         console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script> -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('SW registered');
+      })
+      .catch((err) => {
+        console.log('SW error', err);
       });
     }
   </script>

@@ -1,0 +1,27 @@
+{
+    "short_name": "FireStarter",
+    "name": "Angular4 + Firebase Starter App",
+    "start_url": "/",
+
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+
+    "display": "standalone",
+    "orientation": "portrait",
+
+    "icons": [
+        {
+          "src": "assets/raj.png",
+          "sizes": "72x72",
+          "type": "image/png"
+        },
+        {
+          "src": "assets/raj.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+  
+        /// and so on....
+      ]
+    /// Add icons in next section
+}
