@@ -1,0 +1,14 @@
+{
+  "name": "Batman",
+  "short_name": "Rajuu",
+  "icons": [{
+    "src": "assets/raj.png",
+    "sizes": "192x192",
+    "type": "image\/png"
+  }],
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "theme_color": "#f48c5b",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
