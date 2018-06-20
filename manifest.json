@@ -5,6 +5,10 @@
     "src": "assets/raj.png",
     "sizes": "192x192",
     "type": "image\/png"
+  },{
+    "src": "assets/raj.png",
+    "sizes": "256x256",
+    "type":  "image\/png"
   }],
   "display": "standalone",
   "start_url": "./?utm_source=web_app_manifest",
